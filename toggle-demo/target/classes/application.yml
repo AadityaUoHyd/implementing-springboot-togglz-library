@@ -1,0 +1,12 @@
+togglz:
+  features:
+    APPLY_DISCOUNT:
+      enabled: false
+  features-file: 'file://C:/Studies/code/springboot/toggles.properties'
+  console:
+    secured: false #must be true during production
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'togglz'
